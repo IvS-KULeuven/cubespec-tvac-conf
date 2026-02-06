@@ -127,6 +127,8 @@ Setup:
                     power:
                         hot: 0.6
                         cold: 0.6
+    sut:
+        id: stm
     telemetry:
         dictionary: pandas//../../common/telemetry/tm-dictionary_v1.csv
         dictionary_kwargs:
