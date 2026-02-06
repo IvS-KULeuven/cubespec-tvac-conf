@@ -2,5 +2,7 @@
 
 Setup:
     site_id: KUL
+    sut:
+        id: stm
     history:
         0:  Initial setup for KUL
