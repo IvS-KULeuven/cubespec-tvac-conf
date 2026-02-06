@@ -1,0 +1,135 @@
+# Setup manually generated on 26/01/2026
+
+Setup:
+    site_id: KUL
+    gse:
+        dt8874:
+            device: class//egse.diligent.measurpoint.dt8874.dt8874.Dt8874Proxy
+            device_name: MEASURpoint DT8874
+            device_id: DT8874
+            channels: (@0:15)
+            RTD:
+                channels: (@0:15)
+                PT100:
+                    channels: (@0:15)
+        pmx_a:
+            PSU-HFGS:
+                device: class//egse.power_supply.kikusui.pmx_a.pmx_a.PmxAProxy
+                device_name: Power supply for heater HFGS
+                device_id:  PSU-HFGS
+                heater:
+                    name: HFGS    # FGS sensor (POA inside box)
+                    resistance: 20
+                    operating_voltage: 12
+                    max_power: 7.2
+                    power:
+                        hot: 2.5
+            PSU-HDET:
+                device: class//egse.power_supply.kikusui.pmx_a.pmx_a.PmxAProxy
+                device_name: Power supply for heater HDET
+                device_id: PSU-HDET
+                heater:
+                    name: HDET    # Science sensors (POA inside box)
+                    resistance: 20
+                    operating_voltage: 12
+                    max_power: 7.2
+                    power:
+                        hot: 1
+            PSU-HDEL:
+                device: class//egse.power_supply.kikusui.pmx_a.pmx_a.PmxAProxy
+                device_name: Power supply for heater HDEL
+                device_id: PSU-HDEL
+                heater:
+                    name: HDEL    # Detector electronics (POA outside box)
+                    resistance: 20
+                    operating_voltage: 12
+                    max_power: 7.2
+                    power:
+                        hot: 3.8
+            PSU-HPCU:
+                device: class//egse.power_supply.kikusui.pmx_a.pmx_a.PmxAProxy
+                device_name: Power supply for heater HPCU
+                device_id: PSU-HPCU
+                heater:
+                    name: HPCU    # PCU processor + Piezo driver (PCU stack)
+                    resistance: 20
+                    operating_voltage: 12
+                    max_power: 19.2
+                    power:
+                        hot: 10
+            PSU-HADC:
+                device: class//egse.power_supply.kikusui.pmx_a.pmx_a.PmxAProxy
+                device_name: Power supply for heater HADC
+                device_id: PSU-HADC
+                heater:
+                    name: HADC    # ADCS main box + ADCS sensors (ADCS main stack)
+                    resistance: 7.5
+                    operating_voltage: 12
+                    max_power: 19.2
+                    power:
+                        hot: 2.6
+                        cold: 2.6
+            PSU-HACT:
+                device: class//egse.power_supply.kikusui.pmx_a.pmx_a.PmxAProxy
+                device_name: Power supply for heater HACT
+                device_id: PSU-HACT
+                heater:
+                    name: HACT    # ADCS actuators (ADCS actuator stack)
+                    resistance: 7.5
+                    max_power: 19.2
+                    power:
+                        hot: 9
+                        cold: 1.3
+            PSU-HSAG:
+                device: class//egse.power_supply.kikusui.pmx_a.pmx_a.PmxAProxy
+                device_name: Power supply for heater HSAG
+                device_id: PSU-HSAG
+                heater:
+                    name: HSAG    # Star tracker Sagitta (Sagitta stack) + Star tracker Twinkle (+Z panel)
+                    resistance: 7.5
+                    operating_voltage: 12
+                    max_power: 19.2
+                    power:
+                        hot: 2.9
+            PSU-AV1:
+                device: class//egse.power_supply.kikusui.pmx_a.pmx_a.PmxAProxy
+                device_name: Power supply for heater HAV1
+                device_id: PSU-HAV1
+                heater:
+                    name: AV1    # BAT + MPPT (avionics stack 1)
+                    resistance: 7.5
+                    operating_voltage: 12
+                    max_power: 19.2
+                    power:
+                        hot: 1.6
+                        cold: 1.6
+            PSU-AV2:
+                device: class//egse.power_supply.kikusui.pmx_a.pmx_a.PmxAProxy
+                device_name: Power supply for heater HAV2
+                device_id: PSU-HAV2
+                heater:
+                    name: AV2    # PDU + COM + OBDH (avionics stack 2)
+                    resistance: 7.5
+                    operating_voltage: 12
+                    max_power: 19.2
+                    power:
+                        hot: 11.1
+                        cold: 6.2
+            PSU-FSS:
+                device: class//egse.power_supply.kikusui.pmx_a.pmx_a.PmxAProxy
+                device_name: Power supply for heater HFSS
+                device_id: PSU-HFSS
+                heater:
+                    name: HFSS    # FSS (body panels)
+                    resistance: 20
+                    operating_voltage: 12
+                    max_power: 7.2
+                    power:
+                        hot: 0.6
+                        cold: 0.6
+    telemetry:
+        dictionary: pandas//../../common/telemetry/tm-dictionary_v1.csv
+        separator: ;
+    history:
+        0:  Initial setup for KUL
+        1:  Incl.TM dictionary + MEASURpoint + PSUs
