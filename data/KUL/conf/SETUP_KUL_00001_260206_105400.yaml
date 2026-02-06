@@ -129,7 +129,8 @@ Setup:
                         cold: 0.6
     telemetry:
         dictionary: pandas//../../common/telemetry/tm-dictionary_v1.csv
-        separator: ;
+        dictionary_kwargs:
+            separator: ;
     history:
         0:  Initial setup for KUL
         1:  Incl.TM dictionary + MEASURpoint + PSUs
