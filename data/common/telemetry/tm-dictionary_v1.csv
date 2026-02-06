@@ -1,0 +1,25 @@
+TM source;Storage mnemonic;CGSE mnemonic;Original name in CGSE;Name of corresponding timestamp;Description;Unit
+Configuration Manager;CM;CM_SITE_ID;CM_SITE_ID;timestamp;Site identifier (KUL);
+Configuration Manager;CM;CM_SETUP_ID;CM_SETUP_ID;timestamp;Setup identifier;
+Configuration Manager;CM;CM_TEST_ID;CM_TEST_ID;timestamp;Test identifier;
+Configuration Manager;CM;CM_OBSID;CM_OBSID;timestamp;Observation identifier;
+KIKUSUI PMX-A;PSU-HFGS;HFGS_CURRENT;CURRENT;timestamp;Current;Ohm
+KIKUSUI PMX-A;PSU-HFGS;HFGS_VOLTAGE;VOLTAGE;timestamp;Current;V
+KIKUSUI PMX-A;PSU-HDET;HDET_CURRENT;CURRENT;timestamp;Current;Ohm
+KIKUSUI PMX-A;PSU-HDET;HDET_VOLTAGE;VOLTAGE;timestamp;Current;V
+KIKUSUI PMX-A;PSU-HDEL;HDEL_CURRENT;CURRENT;timestamp;Current;Ohm
+KIKUSUI PMX-A;PSU-HDEL;HDEL_VOLTAGE;VOLTAGE;timestamp;Current;V
+KIKUSUI PMX-A;PSU-HPCU;HPCU_CURRENT;CURRENT;timestamp;Current;Ohm
+KIKUSUI PMX-A;PSU-HPCU;HPCU_VOLTAGE;VOLTAGE;timestamp;Current;V
+KIKUSUI PMX-A;PSU-HADC;HADC_CURRENT;CURRENT;timestamp;Current;Ohm
+KIKUSUI PMX-A;PSU-HADC;HADC_VOLTAGE;VOLTAGE;timestamp;Current;V
+KIKUSUI PMX-A;PSU-HACT;HACT_CURRENT;CURRENT;timestamp;Current;Ohm
+KIKUSUI PMX-A;PSU-HACT;HACT_VOLTAGE;VOLTAGE;timestamp;Current;V
+KIKUSUI PMX-A;PSU-HSAG;HSAG_CURRENT;CURRENT;timestamp;Current;Ohm
+KIKUSUI PMX-A;PSU-HSAG;HSAG_VOLTAGE;VOLTAGE;timestamp;Current;V
+KIKUSUI PMX-A;PSU-HAV1;HAV1_CURRENT;CURRENT;timestamp;Current;Ohm
+KIKUSUI PMX-A;PSU-HAV1;HAV1_VOLTAGE;VOLTAGE;timestamp;Current;V
+KIKUSUI PMX-A;PSU-HAV2;HAV2_CURRENT;CURRENT;timestamp;Current;Ohm
+KIKUSUI PMX-A;PSU-HAV2;HAV2_VOLTAGE;VOLTAGE;timestamp;Current;V
+KIKUSUI PMX-A;PSU-HFSS;HFSS_CURRENT;CURRENT;timestamp;Current;Ohm
+KIKUSUI PMX-A;PSU-HFSS;HFSS_VOLTAGE;VOLTAGE;timestamp;Current;V
