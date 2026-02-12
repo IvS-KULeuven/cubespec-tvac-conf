@@ -15,11 +15,11 @@ Setup:
                 PT100:
                     channels: (@0:5,8:12)
         power_supply:
-            PSU-HFGS:
+            PSU_HFGS:
                 device: class//egse.power_supply.kikusui.pmx_a.pmx_a.PmxAProxy
                 device_name: Power supply for heater HFGS
-                device_id:  PSU-HFGS
-                device_args: [PSU-HFGS]
+                device_id:  PSU_HFGS
+                device_args: [PSU_HFGS]
                 heater:
                     name: HFGS    # FGS sensor (POA inside box)
                     resistance: 20
@@ -27,11 +27,11 @@ Setup:
                     max_power: 7.2
                     power:
                         hot: 2.5
-            PSU-HDET:
+            PSU_HDET:
                 device: class//egse.power_supply.kikusui.pmx_a.pmx_a.PmxAProxy
                 device_name: Power supply for heater HDET
-                device_id: PSU-HDET
-                device_args: [PSU-HDET]
+                device_id: PSU_HDET
+                device_args: [PSU_HDET]
                 heater:
                     name: HDET    # Science sensors (POA inside box)
                     resistance: 20
@@ -39,11 +39,11 @@ Setup:
                     max_power: 7.2
                     power:
                         hot: 1
-            PSU-HDEL:
+            PSU_HDEL:
                 device: class//egse.power_supply.kikusui.pmx_a.pmx_a.PmxAProxy
                 device_name: Power supply for heater HDEL
-                device_id: PSU-HDEL
-                device_args: [PSU-HDEL]
+                device_id: PSU_HDEL
+                device_args: [PSU_HDEL]
                 heater:
                     name: HDEL    # Detector electronics (POA outside box)
                     resistance: 20
@@ -51,11 +51,11 @@ Setup:
                     max_power: 7.2
                     power:
                         hot: 3.8
-            PSU-HPCU:
+            PSU_HPCU:
                 device: class//egse.power_supply.kikusui.pmx_a.pmx_a.PmxAProxy
                 device_name: Power supply for heater HPCU
-                device_id: PSU-HPCU
-                device_args: [PSU-HPCU]
+                device_id: PSU_HPCU
+                device_args: [PSU_HPCU]
                 heater:
                     name: HPCU    # PCU processor + Piezo driver (PCU stack)
                     resistance: 20
@@ -63,11 +63,11 @@ Setup:
                     max_power: 19.2
                     power:
                         hot: 10
-            PSU-HADC:
+            PSU_HADC:
                 device: class//egse.power_supply.kikusui.pmx_a.pmx_a.PmxAProxy
                 device_name: Power supply for heater HADC
-                device_id: PSU-HADC
-                device_args: [PSU-HADC]
+                device_id: PSU_HADC
+                device_args: [PSU_HADC]
                 heater:
                     name: HADC    # ADCS main box + ADCS sensors (ADCS main stack)
                     resistance: 7.5
@@ -76,11 +76,11 @@ Setup:
                     power:
                         hot: 2.6
                         cold: 2.6
-            PSU-HACT:
+            PSU_HACT:
                 device: class//egse.power_supply.kikusui.pmx_a.pmx_a.PmxAProxy
                 device_name: Power supply for heater HACT
-                device_id: PSU-HACT
-                device_args: [PSU-HACT]
+                device_id: PSU_HACT
+                device_args: [PSU_HACT]
                 heater:
                     name: HACT    # ADCS actuators (ADCS actuator stack)
                     resistance: 7.5
@@ -88,11 +88,11 @@ Setup:
                     power:
                         hot: 9
                         cold: 1.3
-            PSU-HSAG:
+            PSU_HSAG:
                 device: class//egse.power_supply.kikusui.pmx_a.pmx_a.PmxAProxy
                 device_name: Power supply for heater HSAG
-                device_id: PSU-HSAG
-                device_args: [PSU-HSAG]
+                device_id: PSU_HSAG
+                device_args: [PSU_HSAG]
                 heater:
                     name: HSAG    # Star tracker Sagitta (Sagitta stack) + Star tracker Twinkle (+Z panel)
                     resistance: 7.5
@@ -100,11 +100,11 @@ Setup:
                     max_power: 19.2
                     power:
                         hot: 2.9
-            PSU-HAV1:
+            PSU_HAV1:
                 device: class//egse.power_supply.kikusui.pmx_a.pmx_a.PmxAProxy
                 device_name: Power supply for heater HAV1
-                device_id: PSU-HAV1
-                device_args: [PSU-HAV1]
+                device_id: PSU_HAV1
+                device_args: [PSU_HAV1]
                 heater:
                     name: AV1    # BAT + MPPT (avionics stack 1)
                     resistance: 7.5
@@ -113,11 +113,11 @@ Setup:
                     power:
                         hot: 1.6
                         cold: 1.6
-            PSU-HAV2:
+            PSU_HAV2:
                 device: class//egse.power_supply.kikusui.pmx_a.pmx_a.PmxAProxy
                 device_name: Power supply for heater HAV2
-                device_id: PSU-HAV2
-                device_args: [PSU-HAV2]
+                device_id: PSU_HAV2
+                device_args: [PSU_HAV2]
                 heater:
                     name: AV2    # PDU + COM + OBDH (avionics stack 2)
                     resistance: 7.5
@@ -126,11 +126,11 @@ Setup:
                     power:
                         hot: 11.1
                         cold: 6.2
-            PSU-HFSS:
+            PSU_HFSS:
                 device: class//egse.power_supply.kikusui.pmx_a.pmx_a.PmxAProxy
                 device_name: Power supply for heater HFSS
-                device_id: PSU-HFSS
-                device_args: [PSU-HFSS]
+                device_id: PSU_HFSS
+                device_args: [PSU_HFSS]
                 heater:
                     name: HFSS    # FSS (body panels)
                     resistance: 20
