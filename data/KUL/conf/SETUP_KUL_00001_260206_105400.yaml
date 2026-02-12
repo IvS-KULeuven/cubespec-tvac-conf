@@ -2,21 +2,24 @@
 
 Setup:
     site_id: KUL
+    sut:
+        id: stm
     gse:
         dt8874:
             device: class//egse.diligent.measurpoint.dt8874.dt8874.Dt8874Proxy
             device_name: MEASURpoint DT8874
             device_id: DT8874
-            channels: (@0:15)
+            channels: (@0:5,8:12)
             RTD:
-                channels: (@0:15)
+                channels: (@0:5,8:12)
                 PT100:
-                    channels: (@0:15)
+                    channels: (@0:5,8:12)
         power_supply:
             PSU-HFGS:
                 device: class//egse.power_supply.kikusui.pmx_a.pmx_a.PmxAProxy
                 device_name: Power supply for heater HFGS
                 device_id:  PSU-HFGS
+                device_args: [PSU-HFGS]
                 heater:
                     name: HFGS    # FGS sensor (POA inside box)
                     resistance: 20
@@ -28,6 +31,7 @@ Setup:
                 device: class//egse.power_supply.kikusui.pmx_a.pmx_a.PmxAProxy
                 device_name: Power supply for heater HDET
                 device_id: PSU-HDET
+                device_args: [PSU-HDET]
                 heater:
                     name: HDET    # Science sensors (POA inside box)
                     resistance: 20
@@ -39,6 +43,7 @@ Setup:
                 device: class//egse.power_supply.kikusui.pmx_a.pmx_a.PmxAProxy
                 device_name: Power supply for heater HDEL
                 device_id: PSU-HDEL
+                device_args: [PSU-HDEL]
                 heater:
                     name: HDEL    # Detector electronics (POA outside box)
                     resistance: 20
@@ -50,6 +55,7 @@ Setup:
                 device: class//egse.power_supply.kikusui.pmx_a.pmx_a.PmxAProxy
                 device_name: Power supply for heater HPCU
                 device_id: PSU-HPCU
+                device_args: [PSU-HPCU]
                 heater:
                     name: HPCU    # PCU processor + Piezo driver (PCU stack)
                     resistance: 20
@@ -61,6 +67,7 @@ Setup:
                 device: class//egse.power_supply.kikusui.pmx_a.pmx_a.PmxAProxy
                 device_name: Power supply for heater HADC
                 device_id: PSU-HADC
+                device_args: [PSU-HADC]
                 heater:
                     name: HADC    # ADCS main box + ADCS sensors (ADCS main stack)
                     resistance: 7.5
@@ -73,6 +80,7 @@ Setup:
                 device: class//egse.power_supply.kikusui.pmx_a.pmx_a.PmxAProxy
                 device_name: Power supply for heater HACT
                 device_id: PSU-HACT
+                device_args: [PSU-HACT]
                 heater:
                     name: HACT    # ADCS actuators (ADCS actuator stack)
                     resistance: 7.5
@@ -84,6 +92,7 @@ Setup:
                 device: class//egse.power_supply.kikusui.pmx_a.pmx_a.PmxAProxy
                 device_name: Power supply for heater HSAG
                 device_id: PSU-HSAG
+                device_args: [PSU-HSAG]
                 heater:
                     name: HSAG    # Star tracker Sagitta (Sagitta stack) + Star tracker Twinkle (+Z panel)
                     resistance: 7.5
@@ -95,6 +104,7 @@ Setup:
                 device: class//egse.power_supply.kikusui.pmx_a.pmx_a.PmxAProxy
                 device_name: Power supply for heater HAV1
                 device_id: PSU-HAV1
+                device_args: [PSU-HAV1]
                 heater:
                     name: AV1    # BAT + MPPT (avionics stack 1)
                     resistance: 7.5
@@ -107,6 +117,7 @@ Setup:
                 device: class//egse.power_supply.kikusui.pmx_a.pmx_a.PmxAProxy
                 device_name: Power supply for heater HAV2
                 device_id: PSU-HAV2
+                device_args: [PSU-HAV2]
                 heater:
                     name: AV2    # PDU + COM + OBDH (avionics stack 2)
                     resistance: 7.5
@@ -119,6 +130,7 @@ Setup:
                 device: class//egse.power_supply.kikusui.pmx_a.pmx_a.PmxAProxy
                 device_name: Power supply for heater HFSS
                 device_id: PSU-HFSS
+                device_args: [PSU-HFSS]
                 heater:
                     name: HFSS    # FSS (body panels)
                     resistance: 20
@@ -127,12 +139,33 @@ Setup:
                     power:
                         hot: 0.6
                         cold: 0.6
-    sut:
-        id: stm
+        DAQ6510:
+            channels: (@101:109)
+            sensors:
+                PT100:
+                    temperature:
+                        transducer: rtd
+                        rtd:
+                            two: PT100
+                        unit: celsius
+                        average:
+                            count: 10
+                            tcontrol: repeat
+                            state: true
+                        channels: (@101:109)
+            route:
+                scan:
+                    count:
+                        scan: 1
+                    interval: 1
+                delay: 1
+            device_name: DAQ6510
+            device_id: DAQ6510
+            device: class//egse.tempcontrol.keithley.daq6510.DAQ6510Proxy
     telemetry:
         dictionary: pandas//../../common/telemetry/tm-dictionary_v1.csv
         dictionary_kwargs:
             separator: ;
     history:
         0:  Initial setup for KUL
-        1:  Incl.TM dictionary + MEASURpoint + PSUs
+        1:  Incl.TM dictionary + MEASURpoint + PSUs + DAQ6510

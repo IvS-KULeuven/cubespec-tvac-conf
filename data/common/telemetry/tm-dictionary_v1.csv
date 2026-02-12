@@ -23,3 +23,29 @@ KIKUSUI PMX-A;PSU-HAV2;HAV2_CURRENT;CURRENT;timestamp;Current;Ohm
 KIKUSUI PMX-A;PSU-HAV2;HAV2_VOLTAGE;VOLTAGE;timestamp;Current;V
 KIKUSUI PMX-A;PSU-HFSS;HFSS_CURRENT;CURRENT;timestamp;Current;Ohm
 KIKUSUI PMX-A;PSU-HFSS;HFSS_VOLTAGE;VOLTAGE;timestamp;Current;V
+Diligent MEASURpoint DT8874;DT8874;DT8874_T_RTD_CH0;DT8874_T_RTD_CH0;timestamp;RTD temperature for channel 0;°C
+Diligent MEASURpoint DT8874;DT8874;DT8874_T_RTD_CH1;DT8874_T_RTD_CH1;timestamp;RTD temperature for channel 1;°C
+Diligent MEASURpoint DT8874;DT8874;DT8874_T_RTD_CH2;DT8874_T_RTD_CH2;timestamp;RTD temperature for channel 2;°C
+Diligent MEASURpoint DT8874;DT8874;DT8874_T_RTD_CH3;DT8874_T_RTD_CH3;timestamp;RTD temperature for channel 3;°C
+Diligent MEASURpoint DT8874;DT8874;DT8874_T_RTD_CH4;DT8874_T_RTD_CH4;timestamp;RTD temperature for channel 4;°C
+Diligent MEASURpoint DT8874;DT8874;DT8874_T_RTD_CH5;DT8874_T_RTD_CH5;timestamp;RTD temperature for channel 5°;°C
+# Diligent MEASURpoint DT8874;DT8874;DT8874_T_RTD_CH6;DT8874_T_RTD_CH6;timestamp;RTD temperature for channel 6;°C
+# Diligent MEASURpoint DT8874;DT8874;DT8874_T_RTD_CH7;DT8874_T_RTD_CH7;timestamp;RTD temperature for channel 7;°C
+Diligent MEASURpoint DT8874;DT8874;DT8874_T_RTD_CH8;DT8874_T_RTD_CH8;timestamp;RTD temperature for channel 8;°C
+Diligent MEASURpoint DT8874;DT8874;DT8874_T_RTD_CH9;DT8874_T_RTD_CH9;timestamp;RTD temperature for channel 9;°C
+Diligent MEASURpoint DT8874;DT8874;DT8874_T_RTD_CH10;DT8874_T_RTD_CH10;timestamp;RTD temperature for channel 10;°C
+Diligent MEASURpoint DT8874;DT8874;DT8874_T_RTD_CH11;DT8874_T_RTD_CH11;timestamp;RTD temperature for channel 11;°C
+Diligent MEASURpoint DT8874;DT8874;DT8874_T_RTD_CH12;DT8874_T_RTD_CH12;timestamp;RTD temperature for channel 12;°C
+# Diligent MEASURpoint DT8874;DT8874;DT8874_T_RTD_CH13;DT8874_T_RTD_CH13;timestamp;RTD temperature for channel 13;°C
+# Diligent MEASURpoint DT8874;DT8874;DT8874_T_RTD_CH14;DT8874_T_RTD_CH14;timestamp;RTD temperature for channel 14;°C
+# Diligent MEASURpoint DT8874;DT8874;DT8874_T_RTD_CH15;DT8874_T_RTD_CH15;timestamp;RTD temperature for channel 15;°C
+DAQ6510;DAQ6510;DAQ6510_T_CH101;101;timestamp;RTD temperature for channel 101;°C
+DAQ6510;DAQ6510;DAQ6510_T_CH102;102;timestamp;RTD temperature for channel 102;°C
+DAQ6510;DAQ6510;DAQ6510_T_CH103;103;timestamp;RTD temperature for channel 103;°C
+DAQ6510;DAQ6510;DAQ6510_T_CH104;104;timestamp;RTD temperature for channel 104;°C
+DAQ6510;DAQ6510;DAQ6510_T_CH105;105;timestamp;RTD temperature for channel 105;°C
+DAQ6510;DAQ6510;DAQ6510_T_CH106;106;timestamp;RTD temperature for channel 106;°C
+DAQ6510;DAQ6510;DAQ6510_T_CH107;107;timestamp;RTD temperature for channel 107;°C
+DAQ6510;DAQ6510;DAQ6510_T_CH108;108;timestamp;RTD temperature for channel 108;°C
+DAQ6510;DAQ6510;DAQ6510_T_CH109;109;timestamp;RTD temperature for channel 109;°C
+# DAQ6510;DAQ6510;DAQ6510;;timestamp;;°C
