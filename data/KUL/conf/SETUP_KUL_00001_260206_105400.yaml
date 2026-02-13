@@ -106,7 +106,7 @@ Setup:
                 device_id: PSU_HAV1
                 device_args: [PSU_HAV1]
                 heater:
-                    name: AV1    # BAT + MPPT (avionics stack 1)
+                    name: HAV1    # BAT + MPPT (avionics stack 1)
                     resistance: 7.5
                     operating_voltage: 12
                     max_power: 19.2
@@ -119,7 +119,7 @@ Setup:
                 device_id: PSU_HAV2
                 device_args: [PSU_HAV2]
                 heater:
-                    name: AV2    # PDU + COM + OBDH (avionics stack 2)
+                    name: HAV2    # PDU + COM + OBDH (avionics stack 2)
                     resistance: 7.5
                     operating_voltage: 12
                     max_power: 19.2
