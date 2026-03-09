@@ -162,6 +162,39 @@ Setup:
             device_name: DAQ6510
             device_id: DAQ6510
             device: class//egse.tempcontrol.keithley.daq6510.DAQ6510Proxy
+        labjack_t7:
+            device_name: LabJack T7
+            device_id: LJT7
+            channels:
+                SG_AIN0:
+                    ain_channel: 0
+                    voltage_range: 0.1
+                    neg_voltage_range: 10.0
+                    resolution_index: 0
+                SG_AIN2:
+                    ain_channel: 2
+                    voltage_range: 0.1
+                    neg_voltage_range: 10.0
+                    resolution_index: 0
+                SG_AIN4:
+                    ain_channel: 4
+                    voltage_range: 0.1
+                    neg_voltage_range: 10.0
+                    resolution_index: 0
+            stream:
+                scan_rate: 496
+                resync_interval_s: 60
+                buffer_size: 32768
+            csv:
+                enabled: true
+                save_path: .
+                base_filename: labjack_sg_data
+                max_file_size_bytes: 5120000
+            plot:
+                enabled: true
+                window_seconds: 5
+                interval_ms: 500
+                show_stats: true
     telemetry:
         dictionary: pandas//../../common/telemetry/tm-dictionary_v1.csv
         dictionary_kwargs:
