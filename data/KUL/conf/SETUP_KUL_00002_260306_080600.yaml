@@ -164,7 +164,7 @@ Setup:
             device: class//egse.tempcontrol.keithley.daq6510.DAQ6510Proxy
         wave_generators:
             awg1:
-                device: class://egse.arbitrary_wave_generator.aim_tti.tgf4000.Tgf4000Proxy
+                device: class//egse.arbitrary_wave_generator.aim_tti.tgf4000.Tgf4000Proxy
                 device_name: Wave generator AWG1 (piezos V1 + V2)
                 device_id: AWG1
                 device_args: [AWG1]
@@ -172,7 +172,7 @@ Setup:
                     channel1: V1_V
                     channel2: V2_V
             awg2:
-                device: class://egse.arbitrary_wave_generator.aim_tti.tgf4000.Tgf4000Proxy
+                device: class//egse.arbitrary_wave_generator.aim_tti.tgf4000.Tgf4000Proxy
                 device_name: Wave generator AWG2 (piezo V3)
                 device_id: AWG2
                 device_args: [AWG2]
