@@ -162,22 +162,55 @@ Setup:
             device_name: DAQ6510
             device_id: DAQ6510
             device: class//egse.tempcontrol.keithley.daq6510.DAQ6510Proxy
+        labjack_t7:
+            device_name: LabJack T7
+            device_id: LJT7
+            channels:
+                SG_AIN0:
+                    ain_channel: 0
+                    voltage_range: 0.1
+                    neg_voltage_range: 10.0
+                    resolution_index: 0
+                SG_AIN2:
+                    ain_channel: 2
+                    voltage_range: 0.1
+                    neg_voltage_range: 10.0
+                    resolution_index: 0
+                SG_AIN4:
+                    ain_channel: 4
+                    voltage_range: 0.1
+                    neg_voltage_range: 10.0
+                    resolution_index: 0
+            stream:
+                scan_rate: 496
+                resync_interval_s: 60
+                buffer_size: 32768
+            csv:
+                enabled: true
+                save_path: .
+                base_filename: labjack_sg_data
+                max_file_size_bytes: 5120000
+            plot:
+                enabled: true
+                window_seconds: 5
+                interval_ms: 500
+                show_stats: true
         wave_generators:
             awg1:
                 device: class//egse.arbitrary_wave_generator.aim_tti.tgf4000.Tgf4000Proxy
                 device_name: Wave generator AWG1 (piezos V1 + V2)
                 device_id: AWG1
                 device_args: [AWG1]
-                piezo:
-                    channel1: V1_V
-                    channel2: V2_V
+                piezo_channels:
+                    V1_V: 1
+                    V2_V: 2
             awg2:
                 device: class//egse.arbitrary_wave_generator.aim_tti.tgf4000.Tgf4000Proxy
                 device_name: Wave generator AWG2 (piezo V3)
                 device_id: AWG2
                 device_args: [AWG2]
-                piezo:
-                    channel1: V3_V
+                piezo_channels:
+                    V3_V: 1
             calibration:
                 profiles:
                     LG: mat//../../common/piezo_signals/SIGN_1_LG_v1.mat
@@ -193,5 +226,5 @@ Setup:
             separator: ;
     history:
         0:  Initial setup for KUL
-        1:  Incl.TM dictionary + MEASURpoint + PSUs + DAQ6510
+        1:  Incl.TM dictionary + MEASURpoint + PSUs + DAQ6510 + SG Readout
         2:  Incl. Aim-TTi wave generators
