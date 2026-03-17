@@ -1,0 +1,231 @@
+# Setup manually generated on 17/03/2026
+
+Setup:
+    site_id: KUL
+    sut:
+        id: stm
+    gse:
+        dt8874:
+            device: class//egse.diligent.measurpoint.dt8874.dt8874.Dt8874Proxy
+            device_name: MEASURpoint DT8874
+            device_id: DT8874
+            channels: (@0:5,8:12)
+            RTD:
+                channels: (@0:5,8:12)
+                PT100:
+                    channels: (@0:5,8:12)
+        power_supply:
+            PSU_HFGS:
+                device: class//egse.power_supply.kikusui.pmx_a.pmx_a.PmxAProxy
+                device_name: Power supply for heater HFGS
+                device_id:  PSU_HFGS
+                device_args: [PSU_HFGS]
+                heater:
+                    name: HFGS    # FGS sensor (POA inside box)
+                    resistance: 20
+                    operating_voltage: 12
+                    max_power: 7.2
+                    power:
+                        hot: 2.5
+            PSU_HDET:
+                device: class//egse.power_supply.kikusui.pmx_a.pmx_a.PmxAProxy
+                device_name: Power supply for heater HDET
+                device_id: PSU_HDET
+                device_args: [PSU_HDET]
+                heater:
+                    name: HDET    # Science sensors (POA inside box)
+                    resistance: 20
+                    operating_voltage: 12
+                    max_power: 7.2
+                    power:
+                        hot: 1
+            PSU_HDEL:
+                device: class//egse.power_supply.kikusui.pmx_a.pmx_a.PmxAProxy
+                device_name: Power supply for heater HDEL
+                device_id: PSU_HDEL
+                device_args: [PSU_HDEL]
+                heater:
+                    name: HDEL    # Detector electronics (POA outside box)
+                    resistance: 20
+                    operating_voltage: 12
+                    max_power: 7.2
+                    power:
+                        hot: 3.8
+            PSU_HPCU:
+                device: class//egse.power_supply.kikusui.pmx_a.pmx_a.PmxAProxy
+                device_name: Power supply for heater HPCU
+                device_id: PSU_HPCU
+                device_args: [PSU_HPCU]
+                heater:
+                    name: HPCU    # PCU processor + Piezo driver (PCU stack)
+                    resistance: 20
+                    operating_voltage: 12
+                    max_power: 19.2
+                    power:
+                        hot: 10
+            PSU_HADC:
+                device: class//egse.power_supply.kikusui.pmx_a.pmx_a.PmxAProxy
+                device_name: Power supply for heater HADC
+                device_id: PSU_HADC
+                device_args: [PSU_HADC]
+                heater:
+                    name: HADC    # ADCS main box + ADCS sensors (ADCS main stack)
+                    resistance: 7.5
+                    operating_voltage: 12
+                    max_power: 19.2
+                    power:
+                        hot: 2.6
+                        cold: 2.6
+            PSU_HACT:
+                device: class//egse.power_supply.kikusui.pmx_a.pmx_a.PmxAProxy
+                device_name: Power supply for heater HACT
+                device_id: PSU_HACT
+                device_args: [PSU_HACT]
+                heater:
+                    name: HACT    # ADCS actuators (ADCS actuator stack)
+                    resistance: 7.5
+                    max_power: 19.2
+                    power:
+                        hot: 9
+                        cold: 1.3
+            PSU_HSAG:
+                device: class//egse.power_supply.kikusui.pmx_a.pmx_a.PmxAProxy
+                device_name: Power supply for heater HSAG
+                device_id: PSU_HSAG
+                device_args: [PSU_HSAG]
+                heater:
+                    name: HSAG    # Star tracker Sagitta (Sagitta stack) + Star tracker Twinkle (+Z panel)
+                    resistance: 7.5
+                    operating_voltage: 12
+                    max_power: 19.2
+                    power:
+                        hot: 2.9
+            PSU_HAV1:
+                device: class//egse.power_supply.kikusui.pmx_a.pmx_a.PmxAProxy
+                device_name: Power supply for heater HAV1
+                device_id: PSU_HAV1
+                device_args: [PSU_HAV1]
+                heater:
+                    name: HAV1    # BAT + MPPT (avionics stack 1)
+                    resistance: 7.5
+                    operating_voltage: 12
+                    max_power: 19.2
+                    power:
+                        hot: 1.6
+                        cold: 1.6
+            PSU_HAV2:
+                device: class//egse.power_supply.kikusui.pmx_a.pmx_a.PmxAProxy
+                device_name: Power supply for heater HAV2
+                device_id: PSU_HAV2
+                device_args: [PSU_HAV2]
+                heater:
+                    name: HAV2    # PDU + COM + OBDH (avionics stack 2)
+                    resistance: 7.5
+                    operating_voltage: 12
+                    max_power: 19.2
+                    power:
+                        hot: 11.1
+                        cold: 6.2
+            PSU_HFSS:
+                device: class//egse.power_supply.kikusui.pmx_a.pmx_a.PmxAProxy
+                device_name: Power supply for heater HFSS
+                device_id: PSU_HFSS
+                device_args: [PSU_HFSS]
+                heater:
+                    name: HFSS    # FSS (body panels)
+                    resistance: 20
+                    operating_voltage: 12
+                    max_power: 7.2
+                    power:
+                        hot: 0.6
+                        cold: 0.6
+        DAQ6510:
+            channels: (@101:109)
+            sensors:
+                PT100:
+                    temperature:
+                        transducer: rtd
+                        rtd:
+                            two: PT100
+                        unit: celsius
+                        average:
+                            count: 10
+                            tcontrol: repeat
+                            state: true
+                        channels: (@101:109)
+            route:
+                scan:
+                    count:
+                        scan: 1
+                    interval: 1
+                delay: 1
+            device_name: DAQ6510
+            device_id: DAQ6510
+            device: class//egse.tempcontrol.keithley.daq6510.DAQ6510Proxy
+        labjack_t7:
+            device_name: LabJack T7
+            device_id: LJT7
+            channels:
+                SG_AIN0:
+                    ain_channel: 0
+                    voltage_range: 0.1
+                    neg_voltage_range: 10.0
+                    resolution_index: 0
+                SG_AIN2:
+                    ain_channel: 2
+                    voltage_range: 0.1
+                    neg_voltage_range: 10.0
+                    resolution_index: 0
+                SG_AIN4:
+                    ain_channel: 4
+                    voltage_range: 0.1
+                    neg_voltage_range: 10.0
+                    resolution_index: 0
+            stream:
+                scan_rate: 496
+                resync_interval_s: 60
+                buffer_size: 32768
+            csv:
+                enabled: true
+                save_path: .
+                base_filename: labjack_sg_data
+                max_file_size_bytes: 5120000
+            plot:
+                enabled: true
+                window_seconds: 5
+                interval_ms: 500
+                show_stats: true
+        wave_generators:
+            awg1:
+                device: class//egse.arbitrary_wave_generator.aim_tti.tgf4000.Tgf4000Proxy
+                device_name: Wave generator AWG1 (piezos V1 + V2)
+                device_id: AWG1
+                device_args: [AWG1]
+                piezo_channels:
+                    V1_V: 1
+                    V2_V: 2
+            awg2:
+                device: class//egse.arbitrary_wave_generator.aim_tti.tgf4000.Tgf4000Proxy
+                device_name: Wave generator AWG2 (piezo V3)
+                device_id: AWG2
+                device_args: [AWG2]
+                piezo_channels:
+                    V3_V: 1
+            calibration:
+                profiles:
+                    LG: piezo//../../common/piezo_signals/SIGN_1_LG_v1.mat
+                    LGA: piezo//../../common/piezo_signals/SIGN_2_LGA_v1.mat
+                    HG: piezo//../../common/piezo_signals/SIGN_3_HG_v1.mat
+                    HGA: piezo//../../common/piezo_signals/SIGN_4_HGA_v1.mat
+                factor: 0.1
+                output_load: 50
+
+    telemetry:
+        dictionary: pandas//../../common/telemetry/tm-dictionary_v1.csv
+        dictionary_kwargs:
+            separator: ;
+    history:
+        0:  Initial setup for KUL
+        1:  Incl.TM dictionary + MEASURpoint + PSUs + DAQ6510 + SG Readout
+        2:  Incl. Aim-TTi wave generators
+        3:  Updated directive for piezo voltage profiles
