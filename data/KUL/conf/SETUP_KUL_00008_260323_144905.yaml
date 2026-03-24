@@ -246,4 +246,4 @@ Setup:
         5: Updated calibration factor for voltage profiles of piezo actuators
         6: Incl. sine sweep parameters for piezo actuators. Remove factor from `wave_generators.calibration`. Rename `wave_generators.calibration` to `wave_generators.piezo_tests`.
         7: Load new piezo profiles, with the scale factor included
-        8: Introduce trigger delay (#)
+        8: Introduce trigger delay
