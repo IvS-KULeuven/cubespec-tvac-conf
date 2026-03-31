@@ -1,0 +1,9 @@
+TM source;Storage mnemonic;CGSE mnemonic;Original name in CGSE;Name of corresponding timestamp;Description;Unit
+Configuration Manager;CM;CM_SITE_ID;CM_SITE_ID;timestamp;Site identifier (KUL);
+Configuration Manager;CM;CM_SETUP_ID;CM_SETUP_ID;timestamp;Setup identifier;
+Configuration Manager;CM;CM_TEST_ID;CM_TEST_ID;timestamp;Test identifier;
+Configuration Manager;CM;CM_OBSID;CM_OBSID;timestamp;Observation identifier;
+Diligent MEASURpoint DT8874;DT8874;TRP1;DT8874_T_RTD_CH0;timestamp;Optical bench interface;°C
+Diligent MEASURpoint DT8874;DT8874;TRP2;DT8874_T_RTD_CH1;timestamp;Cold plate;°C
+Diligent MEASURpoint DT8874;DT8874;TRP3;DT8874_T_RTD_CH2;timestamp;FSM bracket;°C
+Diligent MEASURpoint DT8874;DT8874;TRP4;DT8874_T_RTD_CH3;timestamp;FSM bracket;°C
