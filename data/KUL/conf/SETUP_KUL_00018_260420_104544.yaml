@@ -89,7 +89,7 @@ Setup:
                     time: 4
                     num_steps: 20
                     delay: 2
-                safety range: (0, 4)
+                safety_range: (0, 4)
                 attenuation: 20
     telemetry:
         dictionary: pandas//../../common/telemetry/tm-dictionary_v3.csv
