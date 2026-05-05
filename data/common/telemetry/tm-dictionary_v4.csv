@@ -1,0 +1,5 @@
+TM source;Storage mnemonic;CGSE mnemonic;Original name in CGSE;Name of corresponding timestamp;Description;Unit
+Configuration Manager;CM;CM_SITE_ID;CM_SITE_ID;timestamp;Site identifier (KUL/KUL1/KUL2);
+Configuration Manager;CM;CM_SETUP_ID;CM_SETUP_ID;timestamp;Setup identifier;
+Configuration Manager;CM;CM_TEST_ID;CM_TEST_ID;timestamp;Test identifier;
+Configuration Manager;CM;CM_OBSID;CM_OBSID;timestamp;Observation identifier;

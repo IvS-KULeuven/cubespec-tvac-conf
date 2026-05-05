@@ -1,0 +1,8 @@
+# Setup manually generated on 04/05/2026
+
+Setup:
+    site_id: KUL2
+    sut:
+        id: stm
+    history:
+        0: Initial setup for KUL2
