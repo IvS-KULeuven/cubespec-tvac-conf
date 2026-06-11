@@ -1,0 +1,8 @@
+# Setup manually generated on 04/05/2026
+
+Setup:
+    site_id: KUL1
+    sut:
+        id: piezo
+    history:
+        0: Initial setup for KUL1
