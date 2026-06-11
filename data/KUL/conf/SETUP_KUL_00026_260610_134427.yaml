@@ -40,7 +40,6 @@ Setup:
                     resolution_index: 0
             stream:
                 scan_rate: 496
-                stream_resolution_index: 0
                 resync_interval_s: 60
                 buffer_size: 32768
             csv:
@@ -101,11 +100,15 @@ Setup:
                 ramp:
                     amplitude: 5.000000E-01
                     period: 10
+                    labjack_logging:
+                        stream_resolution_index: 0
                 amplification: 20
                 plateau:
                     voltage: 4.000000E-01
                     duration: 60
                     edges: 1
+                    labjack_logging:
+                        stream_resolution_index: 0
     telemetry:
         dictionary: pandas//../../common/telemetry/tm-dictionary_v3.csv
         dictionary_kwargs:
