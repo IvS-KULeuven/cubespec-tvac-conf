@@ -77,6 +77,8 @@ Setup:
                     HG: piezo//../../common/piezo_signals/SIGN_3_HG_v2.mat
                     HGA: piezo//../../common/piezo_signals/SIGN_4_HGA_v2.mat
                     SM: piezo//../../common/piezo_signals/SIGN_5_SM_v1.mat
+                    labjack_logging:
+                        stream_resolution_index: 0
                 output_load: 50
                 sine_sweep:
                     amplitude: 2.000000E-01
