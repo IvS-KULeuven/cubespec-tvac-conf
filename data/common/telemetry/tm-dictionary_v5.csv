@@ -23,3 +23,19 @@ KIKUSUI PMX-A;PSU_HAV2;HAV2_CURRENT;CURRENT;timestamp;Current;Ohm
 KIKUSUI PMX-A;PSU_HAV2;HAV2_VOLTAGE;VOLTAGE;timestamp;Current;V
 KIKUSUI PMX-A;PSU_HFSS;HFSS_CURRENT;CURRENT;timestamp;Current;Ohm
 KIKUSUI PMX-A;PSU_HFSS;HFSS_VOLTAGE;VOLTAGE;timestamp;Current;V
+Diligent MEASURpoint DT8874;DT8874;TS01;DT8874_T_RTD_PT100_CHx;timestamp;Body panel +Z;°C
+Diligent MEASURpoint DT8874;DT8874;TS02;DT8874_T_RTD_PT100_CHx;timestamp;Body panel +Y;°C
+Diligent MEASURpoint DT8874;DT8874;TS03;DT8874_T_RTD_PT100_CHx;timestamp;Main baseplate, payload side, close to the Ti flexure;°C
+Diligent MEASURpoint DT8874;DT8874;TS04;DT8874_T_RTD_PT100_CHx;timestamp;Main baseplate, close to +X;°C
+Diligent MEASURpoint DT8874;DT8874;TS05;DT8874_T_RTD_PT100_CHx;timestamp;Main baseplate, close to -Z;°C
+Diligent MEASURpoint DT8874;DT8874;TS06;DT8874_T_RTD_PT100_CHx;timestamp;Main baseplate, close to -X;°C
+Diligent MEASURpoint DT8874;DT8874;TS07;DT8874_T_RTD_PT100_CHx;timestamp;Main baseplate, close to +Z;°C
+Diligent MEASURpoint DT8874;DT8874;TS11;DT8874_T_RTD_PT100_CHx;timestamp;Optical box, close to the Ti flexure;°C
+Diligent MEASURpoint DT8874;DT8874;TS14;DT8874_T_RTD_PT100_CHx;timestamp;Optical box lid;°C
+Diligent MEASURpoint DT8874;DT8874;TS21;DT8874_T_RTD_PT100_CHx;timestamp;M1;°C
+Diligent MEASURpoint DT8874;DT8874;TS31;DT8874_T_RTD_PT100_CHx;timestamp;PCU;°C
+Diligent MEASURpoint DT8874;DT8874;TS32;DT8874_T_RTD_PT100_CHx;timestamp;Avionics 2;°C
+Diligent MEASURpoint DT8874;DT8874;TS33;DT8874_T_RTD_PT100_CHx;timestamp;Actuator box;°C
+Diligent MEASURpoint DT8874;DT8874;TS34;DT8874_T_RTD_PT100_CHx;timestamp;ADCS;°C
+Diligent MEASURpoint DT8874;DT8874;TS35;DT8874_T_RTD_PT100_CHx;timestamp;Avionics 1;°C
+Diligent MEASURpoint DT8874;DT8874;TS36;DT8874_T_RTD_PT100_CHx;timestamp;Sagitta;°C
