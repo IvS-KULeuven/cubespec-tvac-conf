@@ -177,9 +177,9 @@ Setup:
         6: Update solar panel TVAC sensor mapping for SP_YN (#56)
         7: Update solar panel TVAC sensor mapping for SP_YN (#56)
         8: Add Thermal Vacuum Chamber (TVAC) control server
-        9: Thermal cycling on TS35: 8 cycles -40/+60 degC
+        9: Thermal cycling on TS35 -> 8 cycles -40/+60 degC
         10: Update solar panel TVAC sensor mapping for SP_XN (#56)
-        11: Thermal cycling on TS01 (SP_XN): 8 cycles -40/+50 degC, 2 h dwell, tuned on 25/09 plate tests
-        12: Thermal cycling TS01: plate setpoint down to -70 degC and overdrive 30 K, -40 degC on TS01 needs the plate at about -61 degC
-        13: Thermal cycling TS01: dwell tolerance of 1 K in the setup
+        11: Thermal cycling on TS01 (SP_XN) -> 8 cycles -40/+50 degC, 2 h dwell, tuned on 25/09 plate tests
+        12: Thermal cycling TS01 -> plate setpoint down to -70 degC and overdrive 30 K, -40 degC on TS01 needs the plate at about -61 degC
+        13: Thermal cycling TS01 -> dwell tolerance of 1 K in the setup
         14: Update solar panel TVAC sensor mapping for SP_YN (#56)
